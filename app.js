@@ -28,8 +28,16 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 const mongoose = require('mongoose');
+// mongoose.connect(
+//   'mongodb+srv://matt-liu:Kevin0122@jhu-help.eax6k.mongodb.net/JHU-Help?retryWrites=true&w=majority',
+//   {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   }
+// );
 mongoose.connect(
-  'mongodb+srv://matt-liu:Kevin0122@jhu-help.eax6k.mongodb.net/JHU-Help?retryWrites=true&w=majority',
+  process.env.MONGODB_URI ||
+    'mongodb+srv://matt-liu:Kevin0122@jhu-help.eax6k.mongodb.net/JHU-Help?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
