@@ -1,20 +1,16 @@
 {
-  "name": "JHU-Help",
-  "version": "0.1.0",
-  "private": true,
+  "name": "server-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "lint": "./node_modules/.bin/esling **/*.js"
+  },
+  "author": "Matt L",
+  "license": "MIT",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.3.1",
-    "npm-run-all": "^4.1.5",
-    "react": "^16.13.1",
-    "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.13.1",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "3.4.1",
-    "react-toastify": "^6.0.6",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -25,29 +21,5 @@
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-plugin-vue": "^6.2.2"
-  },
-  "scripts": {
-    "start": "run-p start:api start:dev",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "start:dev": "cross-env REACT_APP_API_URL=http://localhost:3001 react-scripts start",
-    "start:api": "nodemon server/app.js"
-  },
-  "proxy": "http://localhost:8081",
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }

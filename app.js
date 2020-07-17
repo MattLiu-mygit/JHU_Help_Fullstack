@@ -24,6 +24,9 @@ app.use(function (req, res) {
   res.json(err);
 });
 
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'client', 'build')));
+
 const mongoose = require('mongoose');
 mongoose.connect(
   'mongodb+srv://matt-liu:Kevin0122@jhu-help.eax6k.mongodb.net/JHU-Help?retryWrites=true&w=majority',
@@ -36,6 +39,9 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
   console.log('Connected to MongoDB');
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+  });
   app.listen(port /*app.get('port')*/, function () {
     console.log(
       'API Server Listening on port ' + port /*app.get('port')*/ + '!'
