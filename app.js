@@ -36,8 +36,7 @@ const mongoose = require('mongoose');
 //   }
 // );
 mongoose.connect(
-  process.env.MONGODB_URI ||
-    'mongodb+srv://matt-liu:Kevin0122@jhu-help.eax6k.mongodb.net/JHU-Help?retryWrites=true&w=majority',
+  'mongodb+srv://matt-liu:Kevin0122@jhu-help.eax6k.mongodb.net/JHU-Help?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
