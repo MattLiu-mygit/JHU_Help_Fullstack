@@ -18,23 +18,10 @@ app.use(express.static('static'));
 
 app.use(morgan('dev'));
 
-app.use(function (req, res) {
-  const err = new Error('Not Found');
-  err.status = 404;
-  res.json(err);
-});
-
 const path = require('path');
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 const mongoose = require('mongoose');
-// mongoose.connect(
-//   'mongodb+srv://matt-liu:Kevin0122@jhu-help.eax6k.mongodb.net/JHU-Help?retryWrites=true&w=majority',
-//   {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//   }
-// );
 mongoose.connect(
   'mongodb+srv://matt-liu:Kevin0122@jhu-help.eax6k.mongodb.net/JHU-Help?retryWrites=true&w=majority',
   {
