@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Collapsible from '../Collapsible';
 import JsxParser from 'react-jsx-parser';
 import { getData } from '../../api/collegehelpsApi';
