@@ -34,7 +34,6 @@ const Maryland911Alternatives = () => {
       {MarylandAlternatives.map((outerData) => (
         <Collapsible
           key={outerData._id}
-          className="outerCollapsible"
           title={outerData.main_title}
           content={outerData.main_content.map((middleData) => {
             const urlCount = middleData.urls.length;
