@@ -32,7 +32,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://localhost:8081",
+  "proxy": "https://jhu-help-database.herokuapp.com",
   "eslintConfig": {
     "extends": "react-app"
   },
