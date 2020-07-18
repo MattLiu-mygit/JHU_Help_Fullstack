@@ -11,6 +11,7 @@ const ReportPage = () => {
       setracismHateCrimes(data);
     });
   }, []);
+
   return (
     <>
       <h2>Report Racism/Hate Crimes</h2>
