@@ -9,7 +9,4 @@ const MentalEmotionalSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model(
-  'maryland911alternatives',
-  MentalEmotionalSchema
-);
+module.exports = mongoose.model('mentalandemotional', MentalEmotionalSchema);
