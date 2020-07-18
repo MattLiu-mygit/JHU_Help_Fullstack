@@ -9,4 +9,5 @@ require('./routes/covid-19/resourceinsecurities')(router);
 require('./routes/covid-19/collegehelps')(router);
 require('./routes/covid-19/homeschoolingandchildcare')(router);
 require('./routes/covid-19/racismhatecrimes')(router);
+require('./routes/covid-19/diy')(router);
 module.exports = router;
