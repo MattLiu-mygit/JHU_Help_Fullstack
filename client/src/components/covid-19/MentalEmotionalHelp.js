@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Collapsible from '../Collapsible';
 import { getData } from '../../api/mentalandemotionalApi';
-import ReactHtmlParser from 'react-html-parser';
 import JsxParser from 'react-jsx-parser';
 
 const MentalEmotionalHelp = () => {

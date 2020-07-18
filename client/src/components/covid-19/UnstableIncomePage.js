@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getData } from '../../api/unstableincomeApi';
+import { getData } from '../../api/unstableIncomeApi';
 import Collapsible from '../Collapsible';
 import JsxParser from 'react-jsx-parser';
 
