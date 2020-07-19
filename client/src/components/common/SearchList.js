@@ -44,7 +44,7 @@ const SearchList = (props) => {
         toast.info(
           'Found ' + aggregate.length + ' results in our database! :)'
         );
-      } else {
+      } else if (data.length > 0) {
         toast.error(
           'Found ' + aggregate.length + ' results in our database! :('
         );
