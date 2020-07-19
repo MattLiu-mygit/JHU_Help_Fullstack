@@ -13,7 +13,7 @@ const ReportPage = () => {
   }, []);
 
   return (
-    <>
+    <div className="main-content">
       <h2>Report Racism/Hate Crimes</h2>
       {racismHateCrimes.map((data) => (
         <Collapsible
@@ -21,7 +21,7 @@ const ReportPage = () => {
           content={<JsxParser jsx={data.main_content} />}
         />
       ))}
-    </>
+    </div>
   );
 };
 export default ReportPage;

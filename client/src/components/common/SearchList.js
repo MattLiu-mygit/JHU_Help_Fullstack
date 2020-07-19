@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import * as searchActions from '../../redux/actions/searchResultsAction';
 import Collapsible from '../Collapsible';
 import JsxParser from 'react-jsx-parser';
 const collegeHelp = require('../../api/collegehelpsApi');
@@ -43,8 +41,6 @@ const SearchList = (props) => {
       }
     }
     setSearchResults(aggregate);
-
-    console.log(searchResults);
   };
 
   const generateData = async () => {
@@ -77,9 +73,10 @@ const SearchList = (props) => {
   };
 
   return (
-    <div>
+    <div className="search-results">
       {searchResults.map((_data) => (
         <Collapsible
+          searchterm={props.searchterm}
           title={_data.main_title}
           content={<JsxParser jsx={_data.main_content} />}
         />
@@ -96,14 +93,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return {
-    // // actions: {
-    // //   updateSearchResults: bindActionCreators(
-    // //     searchActions.updateSearchResults,
-    // //     dispatch
-    // //   ),
-    // },
-  };
+  return {};
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchList);

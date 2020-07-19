@@ -1,3 +1,12 @@
+body {
+  background-color: rgb(0, 102, 255); /* Fallback color */
+  background-color: rgba(255, 255, 255, 0.1); /* Black w/opacity/see-through */
+  background-image: url('./jhu-help-campus.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: color-dodge;
+}
+
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   margin-top: 1rem;
@@ -20,8 +29,17 @@
   padding: 0 18px;
   padding-top: 1rem;
   overflow: hidden;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
 }
+
+a {
+  color: #7df9ff;
+} /* CSS link color (red) */
+a:hover {
+  color: #ffffff;
+} /* CSS link hover (green) */
 
 .outerCollapsible button {
   color: teal;
@@ -29,7 +47,7 @@
 
 .frontPageLink {
   background-color: whitesmoke;
-  color: lightskyblue;
+  color: rgb(7, 66, 122);
   border-radius: 12px;
   margin: 1rem;
   margin-left: 0rem;
@@ -37,6 +55,9 @@
   padding: 0.5rem;
   width: text;
   display: inline-block;
+}
+.frontPageLink a {
+  color: rgb(7, 66, 122);
 }
 
 .jumbotron {
@@ -49,4 +70,95 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: color-dodge;
+  margin-bottom: 0.75rem;
+  margin: 1rem;
+}
+
+.first-btn {
+  margin-left: 0.5rem;
+}
+.headerBar {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-left: 0rem;
+}
+
+.header-btn {
+  /* background-color: rgba(0, 0, 0, 0.4); Black w/opacity/see-through */
+  /* color: rgb(5, 57, 226); */
+  background-color: transparent;
+  color: white;
+}
+
+.header-btn:hover,
+.header-btn:focus,
+.header-btn:active,
+.header-btn.active {
+  color: white;
+  background-color: #7df9ff;
+  border-color: none; /*set the color you want here*/
+  box-shadow: none;
+}
+
+.covid-btn:hover,
+.covid-btn:active,
+.covid-btn.active {
+  color: white;
+  background-color: #7df9ff;
+  border: none; /*set the color you want here*/
+  box-shadow: none;
+}
+
+.covid-btn:focus {
+  border: none; /*set the color you want here*/
+  box-shadow: none;
+}
+
+.search-description {
+  background-color: rgb(7, 66, 122);
+  border-radius: 12px;
+  margin: 1rem;
+}
+
+.search-prompt {
+  display: inline-block;
+  color: white;
+  font-size: x-large;
+}
+
+.searchbar {
+  display: inline-block;
+  width: 50%;
+  margin: 1rem;
+  margin-left: 5%;
+}
+
+.search-results {
+  margin: 1rem;
+}
+
+.search {
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 1rem;
+  padding: 0.1rem;
+  border-radius: 1rem;
+}
+
+.survey-table {
+  margin: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.table {
+  color: white;
+}
+
+.main-content {
+  margin: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 0.5rem;
 }

@@ -13,7 +13,7 @@ const MentalEmotionalHelp = () => {
   }, []);
 
   return (
-    <>
+    <div className="main-content">
       <h2>Mental and Emotional Resources</h2>
       <p>
         Some tips for self-care while socializing can be found{' '}
@@ -27,7 +27,7 @@ const MentalEmotionalHelp = () => {
           content={<JsxParser jsx={data.main_content} />}
         />
       ))}
-    </>
+    </div>
   );
 };
 

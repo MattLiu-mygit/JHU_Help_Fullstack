@@ -13,7 +13,7 @@ const ResourceInsecurityPage = () => {
   }, []);
 
   return (
-    <>
+    <div className="main-content">
       <h2>Resource Insecurity</h2>
       {resourceInsecurities.map((data) => (
         <Collapsible
@@ -21,7 +21,7 @@ const ResourceInsecurityPage = () => {
           content={<JsxParser jsx={data.main_content} />}
         />
       ))}
-    </>
+    </div>
   );
 };
 

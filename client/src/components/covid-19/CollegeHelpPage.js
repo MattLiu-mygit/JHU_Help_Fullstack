@@ -12,7 +12,7 @@ const CollegeHelpPage = () => {
     });
   }, []);
   return (
-    <>
+    <div className="main-content">
       <h2>College Help/Academic Assistance</h2>
       {collegeHelp.map((data) => (
         <Collapsible
@@ -20,7 +20,7 @@ const CollegeHelpPage = () => {
           content={<JsxParser jsx={data.main_content} />}
         />
       ))}
-    </>
+    </div>
   );
 };
 

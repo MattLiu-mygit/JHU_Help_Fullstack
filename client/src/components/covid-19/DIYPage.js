@@ -13,7 +13,7 @@ const DIYPage = () => {
   }, []);
 
   return (
-    <>
+    <div className="main-content">
       <h2>DIY Projects and Fun!</h2>
       {diy.map((data) => (
         <Collapsible
@@ -21,7 +21,7 @@ const DIYPage = () => {
           content={<JsxParser jsx={data.main_content} />}
         />
       ))}
-    </>
+    </div>
   );
 };
 

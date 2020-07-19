@@ -13,7 +13,7 @@ const UnstableIncomePage = () => {
   }, []);
 
   return (
-    <>
+    <div className="main-content">
       <h2>Unstable Income</h2>
       {unstableIncome.map((data) => (
         <Collapsible
@@ -21,7 +21,7 @@ const UnstableIncomePage = () => {
           content={<JsxParser jsx={data.main_content} />}
         />
       ))}
-    </>
+    </div>
   );
 };
 export default UnstableIncomePage;

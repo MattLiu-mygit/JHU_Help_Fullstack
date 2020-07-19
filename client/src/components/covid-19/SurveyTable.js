@@ -9,7 +9,8 @@ const SurveyTable = () => {
     });
   }, []);
   return (
-    <>
+    <div className="survey-table">
+      <p>SGA survey with 3023 responses on important topics.</p>
       <table className="table">
         <thead>
           <tr>
@@ -26,7 +27,7 @@ const SurveyTable = () => {
           ))}
         </tbody>
       </table>
-    </>
+    </div>
   );
 };
 export default SurveyTable;

@@ -11,19 +11,28 @@ import HelpUsPage from './HelpUsPage';
 import Maryland911Alternatives from './Maryland911Alternatives';
 
 function App() {
-    return <div className='container-fluid'>
-        <ToastContainer autoClose={3000} hideProgressBar />
-        <Header />
-        <Switch>
-            <Route path='/' exact component={HomePage} />
-            <Route path='/maryland-911-alternatives' component={Maryland911Alternatives} />
-            <Route path='/covid-19' component={CovidHome} />
-            <Route path='/contact' component={ContactPage} />
-            <Route path='/help-us' component={HelpUsPage} />
-            <Redirect from='/about-page' to='/about' />
-            <Route component={NotFoundPAge} />
-        </Switch>
+  return (
+    <div
+      style={{
+        paddingBottom: '1rem',
+      }}
+    >
+      <ToastContainer autoClose={3000} hideProgressBar />
+      <Header />
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route
+          path="/maryland-911-alternatives"
+          component={Maryland911Alternatives}
+        />
+        <Route path="/covid-19" component={CovidHome} />
+        <Route path="/contact" component={ContactPage} />
+        <Route path="/help-us" component={HelpUsPage} />
+        <Redirect from="/about-page" to="/about" />
+        <Route component={NotFoundPAge} />
+      </Switch>
     </div>
+  );
 }
 
 export default App;

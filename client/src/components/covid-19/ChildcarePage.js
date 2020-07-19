@@ -14,7 +14,7 @@ const ChildcarePage = () => {
     });
   }, []);
   return (
-    <>
+    <div className="main-content">
       <h2>Homeschooling and ChildCare</h2>
       {homeschoolingandchildcare.map((data) => (
         <Collapsible
@@ -22,7 +22,7 @@ const ChildcarePage = () => {
           content={<JsxParser jsx={data.main_content} />}
         />
       ))}
-    </>
+    </div>
   );
 };
 

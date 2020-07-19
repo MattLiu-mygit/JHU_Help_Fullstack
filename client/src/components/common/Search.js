@@ -4,10 +4,10 @@ import SearchList from './SearchList';
 
 const Search = () => {
   return (
-    <>
+    <div className="search">
       <SearchBar />
       <SearchList />
-    </>
+    </div>
   );
 };
 
