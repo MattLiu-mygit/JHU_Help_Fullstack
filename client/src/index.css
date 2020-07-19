@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: color-dodge;
+  background-size: cover;
 }
 
 /* Style the button that is used to open and close the collapsible content */
