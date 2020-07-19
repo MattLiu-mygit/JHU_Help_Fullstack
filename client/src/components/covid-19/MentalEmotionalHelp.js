@@ -20,6 +20,7 @@ const MentalEmotionalHelp = () => {
         <a href="https://hub.jhu.edu/2020/03/26/self-care-coronavirus-tips/?utm_source=fb&utm_medium=sm&utm_campaign=covid&utm_content=0327">
           here
         </a>
+        .
       </p>
       {mentalAndEmotional.map((data) => (
         <Collapsible

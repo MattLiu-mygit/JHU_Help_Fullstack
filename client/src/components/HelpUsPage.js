@@ -1,5 +1,4 @@
 import React from 'react';
-import Collapsible from './Collapsible';
 import { Link } from 'react-router-dom';
 
 const HelpUsPage = () => {

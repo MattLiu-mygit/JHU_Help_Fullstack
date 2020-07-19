@@ -19,7 +19,7 @@ function App() {
         paddingBottom: '1rem',
       }}
     >
-      <ToastContainer autoClose={3000} hideProgressBar />
+      <ToastContainer autoClose={4000} hideProgressBar />
       <Header />
       <Switch>
         <Route path="/" exact component={HomePage} />

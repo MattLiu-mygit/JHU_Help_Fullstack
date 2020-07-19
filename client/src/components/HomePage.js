@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Search from './common/Search';
+import { toast } from 'react-toastify';
 
 function HomePage() {
+  useEffect(() => {
+    toast.info('Hello user! Please explore our site or search below!');
+  }, []);
   return (
     <>
       <div className="bg-image"></div>

@@ -2,22 +2,12 @@ import React, { useState } from 'react';
 
 const Collapsible = (props) => {
   const [open, setOpen] = useState(false);
-  const [hover, setHover] = useState(false);
   const handleClick = () => {
     setOpen(!open);
   };
   return (
     <>
-      <button
-        onMouseEnter={() => {
-          setHover(true);
-        }}
-        onMouseLeave={() => {
-          setHover(false);
-        }}
-        className="collapsible btn btn-primary"
-        onClick={handleClick}
-      >
+      <button className="collapsible btn btn-primary" onClick={handleClick}>
         {props.title}
       </button>
       {open ? (

@@ -24,7 +24,7 @@ class UsingMongoPage extends React.Component {
           <p>Start up Atlas. You should see a screen like this </p>
           <Collapsible
             title="Click this to see image"
-            content={<img src={connect} style={{ width: '95%' }} />}
+            content={<img alt=";(" src={connect} style={{ width: '95%' }} />}
           />
           <p style={{ marginTop: '1rem' }}>
             Paste
@@ -42,7 +42,7 @@ class UsingMongoPage extends React.Component {
           </p>
           <Collapsible
             title="Click this to see image"
-            content={<img src={databases} style={{ width: '95%' }} />}
+            content={<img alt=";(" src={databases} style={{ width: '95%' }} />}
           />
           <p style={{ marginTop: '1rem' }}>
             You should be able to see the various collections used for this
@@ -52,7 +52,9 @@ class UsingMongoPage extends React.Component {
           </p>
           <Collapsible
             title="Click this to see image"
-            content={<img src={collegehelps} style={{ width: '95%' }} />}
+            content={
+              <img alt=";(" src={collegehelps} style={{ width: '95%' }} />
+            }
           />
           <p style={{ marginTop: '1rem' }}>
             Click 'Add Data' and 'Insert Document'.
@@ -64,7 +66,9 @@ class UsingMongoPage extends React.Component {
           <p>The structure of our data is shown below.</p>
           <Collapsible
             title="Click this to see image"
-            content={<img src={insertdocument} style={{ width: '95%' }} />}
+            content={
+              <img alt=";(" src={insertdocument} style={{ width: '95%' }} />
+            }
           />
           <p style={{ marginTop: '1rem' }}>
             The main_title is the title of the tab that you want to insert. The
@@ -86,7 +90,7 @@ class UsingMongoPage extends React.Component {
             title="Click this to see image"
             content={
               <>
-                <img src={exampleinsert} style={{ width: '95%' }} />
+                <img alt=";(" src={exampleinsert} style={{ width: '95%' }} />
                 <p>
                   My main_content string was "
                   {
@@ -111,7 +115,9 @@ class UsingMongoPage extends React.Component {
           </p>
           <Collapsible
             title="Click this to see image"
-            content={<img src={ObiWanHelps} style={{ width: '95%' }} />}
+            content={
+              <img alt=";(" src={ObiWanHelps} style={{ width: '95%' }} />
+            }
           />
           <p style={{ marginTop: '1rem' }}>
             Uh oh! What if we need to update data to make a change?
@@ -123,7 +129,7 @@ class UsingMongoPage extends React.Component {
           </p>
           <Collapsible
             title="Click this to see image"
-            content={<img src={pen} style={{ width: '95%' }} />}
+            content={<img alt=";(" src={pen} style={{ width: '95%' }} />}
           />
           <p style={{ marginTop: '1rem' }}>
             Now, tap on the part you want to change, and change it! Remember to

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import Collapsible from '../Collapsible';
 import JsxParser from 'react-jsx-parser';
+import { toast } from 'react-toastify';
 const collegeHelp = require('../../api/collegehelpsApi');
 const diy = require('../../api/diyApi');
 const homeschoolingandchildcare = require('../../api/homeschoolingandchildcareApi');
@@ -38,6 +39,15 @@ const SearchList = (props) => {
           console.log(data[i].main_title);
           aggregate.push(data[i]);
         }
+      }
+      if (aggregate.length > 0) {
+        toast.info(
+          'Found ' + aggregate.length + ' results in our database! :)'
+        );
+      } else {
+        toast.error(
+          'Found ' + aggregate.length + ' results in our database! :('
+        );
       }
     }
     setSearchResults(aggregate);
@@ -87,7 +97,6 @@ const SearchList = (props) => {
 
 function mapStateToProps(state) {
   return {
-    searchResults: state.searchResults,
     searchterm: state.searchterm,
   };
 }
