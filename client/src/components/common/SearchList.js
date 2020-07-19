@@ -21,22 +21,30 @@ const SearchList = (props) => {
     if (data.length === 0) {
       generateData();
     }
+    setSearchResults([]);
     find();
   }, [props.searchterm]);
 
   const find = () => {
     console.log('finding', props.searchterm);
-    for (let i = 0; i < data.length; i++) {
-      if (
-        data[i].main_title.includes(props.searchterm.toLowerCase()) ||
-        data[i].main_content.includes(props.searchterm.toLowerCase())
-      ) {
-        // console.log(data[i].main_content);
-        console.log(data[i].main_title);
-        setSearchResults([...searchResults, data[i]]);
-        console.log(searchResults);
+    let aggregate = [];
+    if (props.searchterm !== '') {
+      for (let i = 0; i < data.length; i++) {
+        const title = data[i].main_title.toLowerCase();
+        const content = data[i].main_content.toLowerCase();
+        if (
+          title.includes(props.searchterm.toLowerCase()) ||
+          content.includes(props.searchterm.toLowerCase())
+        ) {
+          // console.log(data[i].main_content);
+          console.log(data[i].main_title);
+          aggregate.push(data[i]);
+        }
       }
     }
+    setSearchResults(aggregate);
+
+    console.log(searchResults);
   };
 
   const generateData = async () => {
