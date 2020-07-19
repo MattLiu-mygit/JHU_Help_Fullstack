@@ -15,7 +15,7 @@ import YourHelp from './YourHelp';
 const CovidHome = () => {
   return (
     <>
-      <div className="jumbotron" style={{ paddingBottom: '1rem' }}>
+      <div className="jumbotron" style={{ paddingBottom: '0.5rem' }}>
         <h1>Covid-19 Pandemic Resources</h1>
         <p></p>
         <h3>Check out the following resources:</h3>

@@ -72,8 +72,9 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: color-dodge;
-  margin-bottom: 0.75rem;
   margin: 1rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 1rem;
 }
 
 .first-btn {
