@@ -33,7 +33,7 @@ const SearchList = (props) => {
       ) {
         // console.log(data[i].main_content);
         console.log(data[i].main_title);
-        setSearchResults([searchResults, data[i]]);
+        setSearchResults([...searchResults, data[i]]);
         console.log(searchResults);
       }
     }
