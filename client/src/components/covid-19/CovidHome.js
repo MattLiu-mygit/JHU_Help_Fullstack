@@ -68,6 +68,13 @@ const CovidHome = () => {
         >
           DIY Projects and Fun
         </Link>
+        <Link
+          style={{ margin: '1rem', marginLeft: '0rem' }}
+          to="/covid-19/your-help"
+          className="btn btn-primary covid-btn"
+        >
+          How <i>you</i> can help!
+        </Link>
         <p></p>
       </div>
 

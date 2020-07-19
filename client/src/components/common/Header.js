@@ -15,7 +15,7 @@ function Header() {
     backgroundColor: 'transparent',
   };
   return (
-    <nav className="headerBar">
+    <nav className="headerBar" style={{ color: '#D8D8D8' }}>
       <NavLink
         className="btn btn-primary header-btn first-btn"
         style={headerButton}
@@ -57,11 +57,19 @@ function Header() {
         className="btn btn-primary header-btn"
         style={headerButton}
         activeStyle={activeStyle}
+        to="/data"
+      >
+        Source Data and APIs
+      </NavLink>
+      {'|'}
+      <NavLink
+        className="btn btn-primary header-btn"
+        style={headerButton}
+        activeStyle={activeStyle}
         to="/contact"
       >
         Contact
       </NavLink>
-      {'|'}
     </nav>
   );
 }

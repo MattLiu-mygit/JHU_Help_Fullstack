@@ -9,6 +9,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import CovidHome from './covid-19/CovidHome';
 import HelpUsPage from './HelpUsPage';
 import Maryland911Alternatives from './Maryland911Alternatives';
+import DataPage from './DataPage';
+import UsingMongoPage from './UsingMongoPage';
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
         />
         <Route path="/covid-19" component={CovidHome} />
         <Route path="/contact" component={ContactPage} />
+        <Route path="/data" component={DataPage} />
         <Route path="/help-us" component={HelpUsPage} />
+        <Route path="/mongo" component={UsingMongoPage} />
         <Redirect from="/about-page" to="/about" />
         <Route component={NotFoundPAge} />
       </Switch>
