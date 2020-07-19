@@ -32,6 +32,7 @@ function Header() {
         activeStyle={activeStyle}
         to="/covid-19"
       >
+        {' '}
         Covid-19 Pandemic Resources
       </NavLink>
       {'|'}
@@ -41,6 +42,7 @@ function Header() {
         activeStyle={activeStyle}
         to="/maryland-911-alternatives"
       >
+        {' '}
         Maryland 911 Alternatives
       </NavLink>
       {'|'}
@@ -50,6 +52,7 @@ function Header() {
         activeStyle={activeStyle}
         to="/help-us"
       >
+        {' '}
         Help us help you
       </NavLink>
       {'|'}
@@ -59,6 +62,7 @@ function Header() {
         activeStyle={activeStyle}
         to="/data"
       >
+        {' '}
         Source Data and APIs
       </NavLink>
       {'|'}
@@ -68,6 +72,7 @@ function Header() {
         activeStyle={activeStyle}
         to="/contact"
       >
+        {' '}
         Contact
       </NavLink>
     </nav>
