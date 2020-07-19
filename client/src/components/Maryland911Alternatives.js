@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Collapsible from './Collapsible';
 import { getData } from '../api/maryland911alternativesAPI';
+import JsxParser from 'react-jsx-parser';
 
 const Maryland911Alternatives = () => {
   const [MarylandAlternatives, setMarylandAlternatives] = useState([]);
@@ -11,28 +12,33 @@ const Maryland911Alternatives = () => {
     });
   }, []);
 
-  const hereCheck = (innerData) => {
-    let begin = innerData;
-    let end = '';
-    for (let i = 0; i < innerData.length; i++) {
-      let check = innerData.substring(i, innerData.length);
-      if (check === 'here.') {
-        begin = innerData.substring(0, i);
-        end = check;
-        console.log('found');
-        break;
-      }
-    }
-    return { begin, end };
-  };
+  // const hereCheck = (innerData) => {
+  //   let begin = innerData;
+  //   let end = '';
+  //   for (let i = 0; i < innerData.length; i++) {
+  //     let check = innerData.substring(i, innerData.length);
+  //     if (check === 'here.') {
+  //       begin = innerData.substring(0, i);
+  //       end = check;
+  //       console.log('found');
+  //       break;
+  //     }
+  //   }
+  //   return { begin, end };
+  // };
 
   return (
     <>
       <div className="jumbotron">
         <h1>Maryland Alternatives to Calling 911</h1>
       </div>
-      {MarylandAlternatives.map((outerData) => (
+      {MarylandAlternatives.map((data) => (
         <Collapsible
+          title={data.main_title}
+          content={<JsxParser jsx={data.main_content} />}
+        />
+      ))}
+      {/* <Collapsible
           key={outerData._id}
           title={outerData.main_title}
           content={outerData.main_content.map((middleData) => {
@@ -57,8 +63,7 @@ const Maryland911Alternatives = () => {
               </>
             );
           })}
-        />
-      ))}
+        /> */}
       {/* <Collapsible
         className="outerCollapsible"
         title="General Referral Hotline"

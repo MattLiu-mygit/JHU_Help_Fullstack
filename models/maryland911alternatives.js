@@ -5,7 +5,7 @@ const MarylandAltSchema = new mongoose.Schema({
     type: String,
   },
   main_content: {
-    type: Array,
+    type: String,
   },
 });
 

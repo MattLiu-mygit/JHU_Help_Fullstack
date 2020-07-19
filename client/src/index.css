@@ -1,53 +1,52 @@
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    margin-top: 1rem;
-    background-color: rgb(63, 124, 236);
-    color: rgb(255, 255, 255);
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    font-size: 15px;
-  }
+  margin-top: 1rem;
+  background-color: rgb(63, 124, 236);
+  color: rgb(255, 255, 255);
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+}
 
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .collapsible:hover  {
-    background-color: rgb(124, 191, 236);
-  }
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
-    padding: 0 18px;
-    padding-top: 1rem;
-    overflow: hidden;
-    background-color: #f1f1f1;
-  }
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+  background-color: rgb(124, 191, 236);
+}
 
-  .outerCollapsible button {
-      color: teal;
-  }
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  padding-top: 1rem;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 
-  .frontPageLink {
-      background-color: whitesmoke;
-      color: lightskyblue;
-      border-radius: 12px;
-      margin: 1rem;
-      margin-left: 0rem;
-      margin-bottom: 0rem;
-      padding: 0.5rem;
-      width: text;
-      display: inline-block;
-  }
+.outerCollapsible button {
+  color: teal;
+}
 
+.frontPageLink {
+  background-color: whitesmoke;
+  color: lightskyblue;
+  border-radius: 12px;
+  margin: 1rem;
+  margin-left: 0rem;
+  margin-bottom: 0rem;
+  padding: 0.5rem;
+  width: text;
+  display: inline-block;
+}
 
-  .jumbotron {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    min-height: 20rem;
-    background-image: url(/machete.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: color-dodge;
-  }
+.jumbotron {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  min-height: 20rem;
+  background-image: url(/machete.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color-dodge;
+}
