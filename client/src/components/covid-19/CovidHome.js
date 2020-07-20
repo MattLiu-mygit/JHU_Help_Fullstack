@@ -21,7 +21,7 @@ const CovidHome = () => {
         style={{
           marginTop: '6rem',
           paddingBottom: '0.5rem',
-          minHeight: '7.5rem',
+          minHeight: '8rem',
           paddingTop: '2rem',
         }}
       >

@@ -12,9 +12,7 @@ function HomePage() {
       <div className="placeholder"> |</div>
       <div className="jumbotron" style={{ paddingBottom: '0rem' }}>
         <div className="bg-text">
-          <h1 style={{ marginBottom: '2rem', fontSize: 'xxx-large' }}>
-            JHU Help
-          </h1>
+          <h1 style={{ marginBottom: '2.5%' }}>JHU Help</h1>
           <h4>
             <b>Check out the links or search for information below!</b>
           </h4>

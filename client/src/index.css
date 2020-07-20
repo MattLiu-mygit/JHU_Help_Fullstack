@@ -17,7 +17,7 @@ body {
   width: 100%;
   border: none;
   text-align: left;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -33,6 +33,7 @@ body {
   /* background-color: #f1f1f1; */
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
+  font-size: 1rem;
 }
 
 a {
@@ -72,12 +73,21 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: color-dodge;
-  margin: 2rem;
-  margin-bottom: 0.75rem;
-  padding-bottom: 1rem;
-  min-width: 75rem;
+  margin: 2.5%;
+  padding-bottom: 1.25%;
+  width: 95%;
+  /* min-width: 75rem; */
   /* margin-top: 0rem; */
 }
+
+.jumbotron h1 {
+  font-size: 3.5rem;
+}
+
+.jumbotron h4 {
+  font-size: 1.5rem;
+}
+
 .placeholder {
   color: transparent;
 }
@@ -90,6 +100,7 @@ a:hover {
   margin-left: 0rem;
   position: fixed;
   width: 100%;
+  font-size: 1rem;
 }
 
 .header-btn {
@@ -135,14 +146,13 @@ a:hover {
 .search-prompt {
   display: inline-block;
   color: white;
-  margin-left: 1rem;
-  margin-left: 0rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .searchbar {
   display: inline-block;
-  min-width: 50rem;
-  max-width: 70%;
+  width: 70%;
   margin: 1rem;
   margin-left: 1.5rem;
 }
@@ -157,7 +167,8 @@ a:hover {
   margin: 2rem;
   padding: 0.1rem;
   border-radius: 1rem;
-  min-width: 75rem;
+  width: 95%;
+  /* min-width: 75rem; */
   margin-bottom: 0rem;
 }
 
@@ -180,7 +191,13 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   border-radius: 0.5rem;
-  min-width: 75rem;
+  width: 95%;
+  font-size: 1rem;
+  /* min-width: 75rem; */
+}
+
+.main-content h2 {
+  font-size: 2rem;
 }
 
 /* Track */
