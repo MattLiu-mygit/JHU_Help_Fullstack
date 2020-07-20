@@ -7,7 +7,6 @@ const headerButton = {
   outline: 'none',
   boxShadow: 'none',
   marginBottom: '0.1rem',
-  marginTop: '0.1rem',
 };
 function Header() {
   const activeStyle = {

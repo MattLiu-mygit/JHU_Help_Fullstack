@@ -75,6 +75,10 @@ a:hover {
   margin: 1rem;
   margin-bottom: 0.75rem;
   padding-bottom: 1rem;
+  /* margin-top: 0rem; */
+}
+.placeholder {
+  color: transparent;
 }
 
 .first-btn {
@@ -83,6 +87,8 @@ a:hover {
 .headerBar {
   background-color: rgba(0, 0, 0, 0.4);
   margin-left: 0rem;
+  position: fixed;
+  width: 100%;
 }
 
 .header-btn {

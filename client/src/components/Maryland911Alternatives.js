@@ -15,6 +15,7 @@ const Maryland911Alternatives = () => {
 
   return (
     <>
+      <div className="placeholder"> |</div>
       <div className="jumbotron" style={{ paddingBottom: '0rem' }}>
         <h1>Maryland Alternatives to Calling 911</h1>
         <p style={{ marginTop: '5rem' }}>

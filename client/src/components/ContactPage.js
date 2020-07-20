@@ -5,6 +5,7 @@ class ContactPage extends React.Component {
   render() {
     return (
       <>
+        <div className="placeholder">|</div>
         <div className="jumbotron" style={{ paddingBottom: '0rem' }}>
           <h2 style={{ marginBottom: '4rem' }}>Contact us!</h2>
           <p>

@@ -9,7 +9,7 @@ function HomePage() {
   }, []);
   return (
     <>
-      <div className="bg-image"></div>
+      <div className="placeholder"> |</div>
       <div className="jumbotron" style={{ paddingBottom: '0rem' }}>
         <div className="bg-text">
           <h1 style={{ marginBottom: '2rem', fontSize: 'xxx-large' }}>
