@@ -35,8 +35,6 @@ const SearchList = (props) => {
           title.includes(props.searchterm.toLowerCase()) ||
           content.includes(props.searchterm.toLowerCase())
         ) {
-          // console.log(data[i].main_content);
-          console.log(data[i].main_title);
           aggregate.push(data[i]);
         }
       }
@@ -86,6 +84,7 @@ const SearchList = (props) => {
     <div className="search-results">
       {searchResults.map((_data) => (
         <MenuItem
+          id={_data._id}
           searchterm={props.searchterm}
           title={_data.main_title}
           content={<JsxParser jsx={_data.main_content} />}

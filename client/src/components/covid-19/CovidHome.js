@@ -16,67 +16,16 @@ const CovidHome = () => {
   return (
     <>
       <div className="placeholder"> |</div>
-      <div className="jumbotron" style={{ paddingBottom: '0.5rem' }}>
+      <div
+        className="jumbotron"
+        style={{
+          marginTop: '6rem',
+          paddingBottom: '0.5rem',
+          minHeight: '7.5rem',
+          paddingTop: '2rem',
+        }}
+      >
         <h1>Covid-19 Pandemic Resources</h1>
-        <p></p>
-        <h3>Check out the following resources:</h3>
-        <Link
-          style={{ margin: '1rem', marginLeft: '0rem' }}
-          to="/covid-19/mental-emotional"
-          className="btn btn-primary covid-btn"
-        >
-          Mental and Emotional Resources
-        </Link>
-        <Link
-          style={{ margin: '1rem', marginLeft: '0rem' }}
-          to="/covid-19/unstable-income"
-          className="btn btn-primary covid-btn"
-        >
-          Unstable Income
-        </Link>
-        <Link
-          style={{ margin: '1rem', marginLeft: '0rem' }}
-          to="/covid-19/resource-insecurity"
-          className="btn btn-primary covid-btn"
-        >
-          Resource Insecurity
-        </Link>
-        <Link
-          style={{ margin: '1rem', marginLeft: '0rem' }}
-          to="/covid-19/college-help"
-          className="btn btn-primary covid-btn"
-        >
-          College Help
-        </Link>
-        <Link
-          style={{ margin: '1rem', marginLeft: '0rem' }}
-          to="/covid-19/childcare"
-          className="btn btn-primary covid-btn"
-        >
-          Homeschooling and ChildCare
-        </Link>
-        <Link
-          style={{ margin: '1rem', marginLeft: '0rem' }}
-          to="/covid-19/report"
-          className="btn btn-primary covid-btn"
-        >
-          Report Racism/Hate Crimes
-        </Link>
-        <Link
-          style={{ margin: '1rem', marginLeft: '0rem' }}
-          to="/covid-19/diy-fun"
-          className="btn btn-primary covid-btn"
-        >
-          DIY Projects and Fun
-        </Link>
-        <Link
-          style={{ margin: '1rem', marginLeft: '0rem' }}
-          to="/covid-19/your-help"
-          className="btn btn-primary covid-btn"
-        >
-          How <i>you</i> can help!
-        </Link>
-        <p></p>
       </div>
 
       {
