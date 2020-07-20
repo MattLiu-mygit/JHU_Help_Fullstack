@@ -33,7 +33,7 @@ class SearchBar extends React.Component {
             placeholder="Search for info here! (ie. Maryland)"
             onChange={this.handleSearch}
           ></input>
-          <div className="search-prompt"> ⌕ Search Information!</div>
+          <h3 className="search-prompt"> ⌕ Search Information!</h3>
         </div>
       </div>
     );

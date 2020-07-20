@@ -72,9 +72,10 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: color-dodge;
-  margin: 1rem;
+  margin: 2rem;
   margin-bottom: 0.75rem;
   padding-bottom: 1rem;
+  width: 75rem;
   /* margin-top: 0rem; */
 }
 .placeholder {
@@ -131,13 +132,12 @@ a:hover {
 .search-prompt {
   display: inline-block;
   color: white;
-  font-size: x-large;
   margin-left: 1rem;
 }
 
 .searchbar {
   display: inline-block;
-  width: 50%;
+  width: 50rem;
   margin: 1rem;
   margin-left: 1.5rem;
 }
@@ -148,17 +148,19 @@ a:hover {
 
 .search {
   background-color: rgba(0, 0, 0, 0.4);
-  margin: 1rem;
+  margin: 2rem;
   padding: 0.1rem;
   border-radius: 1rem;
+  width: 75rem;
 }
 
 .survey-table {
-  margin: 1rem;
+  margin: 2rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   border-radius: 0.5rem;
+  width: 75rem;
 }
 
 .table {
@@ -166,9 +168,10 @@ a:hover {
 }
 
 .main-content {
-  margin: 1rem;
+  margin: 2rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   border-radius: 0.5rem;
+  width: 75rem;
 }
