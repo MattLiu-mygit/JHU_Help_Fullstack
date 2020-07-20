@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
-import Collapsible from '../Collapsible';
+import MenuItem from './MenuItem';
 import JsxParser from 'react-jsx-parser';
 import { toast } from 'react-toastify';
-const collegeHelp = require('../../api/collegehelpsApi');
-const diy = require('../../api/diyApi');
-const homeschoolingandchildcare = require('../../api/homeschoolingandchildcareApi');
-const maryland911alternatives = require('../../api/maryland911alternativesAPI');
-const mentalandemotional = require('../../api/mentalandemotionalApi');
-const racismhatecrimes = require('../../api/racismhatecrimesApi');
-const resourceinsecurities = require('../../api/resourceinsecuritiesApi');
-const unstableIncome = require('../../api/unstableIncomeApi');
+const collegeHelp = require('../api/collegehelpsApi');
+const diy = require('../api/diyApi');
+const homeschoolingandchildcare = require('../api/homeschoolingandchildcareApi');
+const maryland911alternatives = require('../api/maryland911alternativesAPI');
+const mentalandemotional = require('../api/mentalandemotionalApi');
+const racismhatecrimes = require('../api/racismhatecrimesApi');
+const resourceinsecurities = require('../api/resourceinsecuritiesApi');
+const unstableIncome = require('../api/unstableIncomeApi');
 
 const SearchList = (props) => {
   const [searchResults, setSearchResults] = useState([]);
@@ -85,7 +85,7 @@ const SearchList = (props) => {
   return (
     <div className="search-results">
       {searchResults.map((_data) => (
-        <Collapsible
+        <MenuItem
           searchterm={props.searchterm}
           title={_data.main_title}
           content={<JsxParser jsx={_data.main_content} />}

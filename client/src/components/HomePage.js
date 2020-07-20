@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Search from './common/Search';
+import Search from './Search';
 import { toast } from 'react-toastify';
 
 function HomePage() {

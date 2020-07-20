@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as searchActions from '../../redux/actions/searchActions';
+import * as searchActions from '../redux/actions/searchActions';
 import debounce from 'lodash.debounce';
 
 class SearchBar extends React.Component {

@@ -124,9 +124,12 @@ a:hover {
 }
 
 .search-description {
-  background-color: rgb(7, 66, 122);
+  background-color: rgb(14, 103, 185);
   border-radius: 12px;
   margin: 1rem;
+  margin-bottom: 0rem;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .search-prompt {
@@ -144,6 +147,7 @@ a:hover {
 
 .search-results {
   margin: 1rem;
+  margin-top: 0rem;
 }
 
 .search {
@@ -152,6 +156,7 @@ a:hover {
   padding: 0.1rem;
   border-radius: 1rem;
   width: 75rem;
+  margin-bottom: 0rem;
 }
 
 .survey-table {
@@ -174,4 +179,46 @@ a:hover {
   padding: 1rem;
   border-radius: 0.5rem;
   width: 75rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  background-color: rgba(7, 66, 122, 0.2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  background-color: rgb(142, 223, 255);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+  background: rgb(105, 212, 255);
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(7, 66, 122, 0.2);
+  background: transparent;
+}
+
+.menu-item {
+  width: 100%;
+  border-radius: 0rem;
+  text-align: left;
+  padding-left: 2rem;
+  background-color: rgba(7, 66, 122, 0.7);
+  border-color: transparent;
+}
+
+.menu-item:hover,
+.menu-item:focus,
+.menu-item:active,
+.menu-item.active {
+  color: white;
+  background-color: rgba(7, 66, 122, 0.7);
+  box-shadow: none;
 }
