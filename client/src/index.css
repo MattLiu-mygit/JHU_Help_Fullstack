@@ -127,13 +127,14 @@ a:hover {
   color: white;
   font-size: x-large;
   margin-left: 1rem;
+  width: 20%;
 }
 
 .searchbar {
   display: inline-block;
   width: 50%;
   margin: 1rem;
-  margin-left: 5%;
+  margin-left: 1.5rem;
 }
 
 .search-results {
