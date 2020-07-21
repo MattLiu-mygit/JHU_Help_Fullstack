@@ -74,6 +74,7 @@ a:hover {
   background-size: cover;
   background-blend-mode: color-dodge;
   margin: 2.5%;
+  margin-top: 4%;
   padding-bottom: 1.25%;
   width: 95%;
   /* min-width: 75rem; */
@@ -197,6 +198,7 @@ a:hover {
   border-radius: 0.5rem;
   width: 95%;
   font-size: 1rem;
+  margin-top: 4%;
   /* min-width: 75rem; */
 }
 

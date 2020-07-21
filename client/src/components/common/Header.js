@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import DropList from './DropList';
@@ -13,6 +13,11 @@ const headerButton = {
 function Header() {
   const [activeDropList, setActiveDropList] = useState(0);
   const [headerActive, setHeaderActive] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth > 840) {
+      setHeaderActive(true);
+    }
+  }, window.innerWidth);
 
   const covidList = [
     {
@@ -147,8 +152,8 @@ function Header() {
           </div>
         ) : null}
 
-        {(activeDropList === 1 || location.pathname.includes('/covid-19')) &&
-        headerActive ? (
+        {headerActive &&
+        (activeDropList === 1 || location.pathname.includes('covid-19')) ? (
           <div
             onMouseLeave={() => {
               setActiveDropList(0);
@@ -164,9 +169,12 @@ function Header() {
         ) : null}
         {window.innerWidth < 840 ? (
           <div
-            className="headerBar"
-            style={{ textAlign: 'center', color: 'white' }}
-            onMouseEnter={() => {
+            style={{
+              textAlign: 'center',
+              color: 'white',
+              margin: '0.75rem',
+            }}
+            onMouseOver={() => {
               setHeaderActive(true);
             }}
           >

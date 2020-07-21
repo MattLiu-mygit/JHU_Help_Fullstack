@@ -19,10 +19,10 @@ const CovidHome = () => {
       <div
         className="jumbotron"
         style={{
-          marginTop: '6rem',
           paddingBottom: '0.5rem',
           minHeight: '8rem',
           paddingTop: '2rem',
+          marginTop: '75px',
         }}
       >
         <h1>Covid-19 Pandemic Resources</h1>
