@@ -137,7 +137,7 @@ a:hover {
 .search-description {
   background-color: rgb(14, 103, 185);
   border-radius: 12px;
-  margin: 1rem;
+  margin: 1.25%;
   margin-bottom: 0rem;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
@@ -164,12 +164,16 @@ a:hover {
 
 .search {
   background-color: rgba(0, 0, 0, 0.4);
-  margin: 2rem;
+  margin: 2.5%;
   padding: 0.1rem;
   border-radius: 1rem;
   width: 95%;
   /* min-width: 75rem; */
   margin-bottom: 0rem;
+}
+
+::placeholder {
+  font-size: 100%;
 }
 
 .survey-table {
@@ -186,7 +190,7 @@ a:hover {
 }
 
 .main-content {
-  margin: 2rem;
+  margin: 2.5%;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
