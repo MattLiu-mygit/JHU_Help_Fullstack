@@ -61,6 +61,7 @@ function Header() {
         onMouseLeave={() => {
           if (window.innerWidth < 840) {
             setHeaderActive(false);
+            setActiveDropList(0);
           }
         }}
       >
