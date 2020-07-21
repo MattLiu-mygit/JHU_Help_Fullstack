@@ -172,7 +172,7 @@ function Header() {
             style={{
               textAlign: 'center',
               color: 'white',
-              margin: '0.75rem',
+              margin: '0.65rem',
             }}
             onMouseOver={() => {
               setHeaderActive(true);

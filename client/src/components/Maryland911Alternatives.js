@@ -64,7 +64,7 @@ class Maryland911Alternatives extends React.Component {
 
   render() {
     return (
-      <>
+      <div style={{ minWidth: '51.5rem' }}>
         <div className="placeholder"> |</div>
         <div
           className="jumbotron"
@@ -79,13 +79,14 @@ class Maryland911Alternatives extends React.Component {
         <div
           className="main-content"
           style={{
+            display: 'inline-block',
             width: '33.5%',
             fontSize: '1.25rem',
             marginTop: '0.5rem',
-            float: 'left',
             marginRight: '0rem',
             borderTopRightRadius: '0rem',
             borderBottomRightRadius: '5px',
+            minWidth: '13rem',
           }}
         >
           <p>
@@ -104,15 +105,16 @@ class Maryland911Alternatives extends React.Component {
           </p>
         </div>
         <div
-          className="main-content"
+          className="main-content covid-content"
           style={{
-            display: 'inline-block',
+            float: 'left',
             width: '61.5%',
             marginTop: '0.5rem',
             paddingTop: '0.25rem',
             minHeight: '12.75rem',
             marginLeft: '0rem',
-
+            minWidth: '31.75rem',
+            position: 'absolute',
             borderTopLeftRadius: '0rem',
             borderBottomLeftRadius: '0px',
           }}
@@ -131,7 +133,7 @@ class Maryland911Alternatives extends React.Component {
                 />
               ))}
         </div>
-      </>
+      </div>
     );
   }
 }

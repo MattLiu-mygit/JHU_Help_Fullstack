@@ -10,7 +10,10 @@ function HomePage() {
   return (
     <>
       <div className="placeholder"> |</div>
-      <div className="jumbotron" style={{ paddingBottom: '0rem' }}>
+      <div
+        className="jumbotron"
+        style={{ paddingBottom: '0rem', minWidth: '0rem' }}
+      >
         <div className="bg-text">
           <h1 style={{ marginBottom: '2.5%' }}>JHU Help</h1>
           <h4>

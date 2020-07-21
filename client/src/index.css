@@ -77,6 +77,7 @@ a:hover {
   margin-top: 4%;
   padding-bottom: 1.25%;
   width: 95%;
+  min-width: 48.75rem;
   /* min-width: 75rem; */
   /* margin-top: 0rem; */
 }
@@ -166,7 +167,7 @@ a:hover {
 .search {
   background-color: rgba(0, 0, 0, 0.4);
   margin: 2.5%;
-  padding: 0.1rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   width: 95%;
   /* min-width: 75rem; */
@@ -258,11 +259,14 @@ a:hover {
 }
 
 .covid-content {
-  float: left;
+  display: inline-block;
   width: 71.5%;
   margin-left: 0rem;
   margin-top: 1%;
   border-top-left-radius: 0rem;
   border-bottom-left-radius: 0rem;
-  margin-right: 0rem;
+  margin-right: 2.5%;
+  /* min-width: 35.75rem; */
+  min-width: 35.75rem;
+  position: absolute;
 }

@@ -20,7 +20,7 @@ const activeStyle = {
 
 const CovidHome = () => {
   return (
-    <>
+    <div style={{ minWidth: '51.5rem' }}>
       <div className="placeholder"> |</div>
       <div
         className="jumbotron"
@@ -36,11 +36,12 @@ const CovidHome = () => {
         className="main-content"
         style={{
           width: '23.5%',
-          float: 'left',
+          minWidth: '13rem',
           marginRight: '0rem',
           marginTop: '1%',
           borderTopRightRadius: '0rem',
           borderBottomRightRadius: '5px',
+          float: 'left',
         }}
       >
         <NavLink
@@ -125,7 +126,7 @@ const CovidHome = () => {
         <Route path="/covid-19" exact component={SurveyTable} />
         <Route component={NotFoundPage} />
       </Switch>
-    </>
+    </div>
   );
 };
 export default CovidHome;
