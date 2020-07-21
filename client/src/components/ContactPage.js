@@ -6,8 +6,8 @@ class ContactPage extends React.Component {
     return (
       <>
         <div className="placeholder">|</div>
-        <div className="jumbotron" style={{ paddingBottom: '0rem' }}>
-          <h2 style={{ marginBottom: '4rem' }}>Contact us!</h2>
+        <div className="main-content">
+          <h2 style={{ marginBottom: '1rem' }}>Contact us!</h2>
           <p>
             Check out our Facebook page{' '}
             <a href="https://www.facebook.com/JHUHelp/?__tn__=%2Cd%2CP-R&eid=ARCzkTeb4uIJUi4nemKCHJf6vM9ByY6Z6NRKZYDBupNC2987pbYBScmveVrU-gsg3EKh_jO9a8Rr8L7G">

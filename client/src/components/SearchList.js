@@ -25,7 +25,6 @@ const SearchList = (props) => {
   }, [props.searchterm]);
 
   const find = () => {
-    console.log('finding', props.searchterm);
     let aggregate = [];
     if (props.searchterm !== '') {
       for (let i = 0; i < data.length; i++) {

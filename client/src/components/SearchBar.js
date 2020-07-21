@@ -5,14 +5,9 @@ import * as searchActions from '../redux/actions/searchActions';
 import debounce from 'lodash.debounce';
 
 class SearchBar extends React.Component {
-  state = { searchTerm: '', error: false };
+  state = { searchTerm: '' };
 
   doSearch = debounce(() => {
-    if (this.state.searchTerm.length >= 3) {
-      this.setState({ error: false });
-    } else {
-      this.setState({ error: true });
-    }
     this.props.actions.setSearchterm(this.state.searchTerm);
   }, 500);
 

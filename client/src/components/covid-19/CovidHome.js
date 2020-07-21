@@ -15,6 +15,7 @@ import YourHelp from './YourHelp';
 const activeStyle = {
   color: '#89cff0',
   backgroundColor: 'transparent',
+  boxShadow: 'none',
 };
 
 const CovidHome = () => {
@@ -34,10 +35,12 @@ const CovidHome = () => {
       <div
         className="main-content"
         style={{
-          width: '22.5%',
+          width: '23.5%',
           float: 'left',
           marginRight: '0rem',
           marginTop: '1%',
+          borderTopRightRadius: '0rem',
+          borderBottomRightRadius: '5px',
         }}
       >
         <NavLink

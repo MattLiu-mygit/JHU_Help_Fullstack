@@ -7,7 +7,7 @@ const YouHelp = () => {
     <>
       <div className="main-content covid-content">
         <h2>How you can help in the pandemic!</h2>
-        <h5 style={{ marginTop: '3rem' }}>Help our Healthcare Workers</h5>
+        <h5>Help our Healthcare Workers</h5>
         <Collapsible
           title="Maryland Responds Reserve Medical Corps"
           content={
