@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import DropList from './DropList';
@@ -12,6 +12,8 @@ const headerButton = {
 };
 function Header() {
   const [activeDropList, setActiveDropList] = useState(0);
+  const [headerActive, setHeaderActive] = useState(false);
+
   const covidList = [
     {
       name: 'Mental and Emotional Resources',
@@ -53,84 +55,97 @@ function Header() {
   };
   return (
     <>
-      <nav className="headerBar" style={{ color: '#D8D8D8' }}>
-        <NavLink
-          className="btn btn-primary header-btn first-btn"
-          style={headerButton}
-          activeStyle={activeStyle}
-          to="/"
-          exact
-          onMouseEnter={() => {
-            setActiveDropList(0);
-          }}
-        >
-          Home
-        </NavLink>
-        {'|'}
-        <NavLink
-          className="btn btn-primary header-btn"
-          style={headerButton}
-          activeStyle={activeStyle}
-          to="/covid-19"
-          onMouseEnter={() => {
-            setActiveDropList(1);
-          }}
-        >
-          {' '}
-          Covid-19 Pandemic Resources
-        </NavLink>
-        {'|'}
-        <NavLink
-          className="btn btn-primary header-btn"
-          style={headerButton}
-          activeStyle={activeStyle}
-          to="/maryland-911-alternatives"
-          onMouseEnter={() => {
-            setActiveDropList(0);
-          }}
-        >
-          {' '}
-          Maryland 911 Alternatives
-        </NavLink>
-        {'|'}
-        <NavLink
-          className="btn btn-primary header-btn"
-          style={headerButton}
-          activeStyle={activeStyle}
-          to="/help-us"
-          onMouseEnter={() => {
-            setActiveDropList(0);
-          }}
-        >
-          {' '}
-          Help us help you
-        </NavLink>
-        {'|'}
-        <NavLink
-          className="btn btn-primary header-btn"
-          style={headerButton}
-          activeStyle={activeStyle}
-          to="/data"
-          onMouseEnter={() => {
-            setActiveDropList(0);
-          }}
-        >
-          {' '}
-          Source Data and APIs
-        </NavLink>
-        {'|'}
-        <NavLink
-          className="btn btn-primary header-btn"
-          style={headerButton}
-          activeStyle={activeStyle}
-          to="/contact"
-          onMouseEnter={() => {
-            setActiveDropList(0);
-          }}
-        >
-          {' '}
-          Contact
-        </NavLink>
+      <nav
+        className="headerBar"
+        style={{ color: '#D8D8D8' }}
+        onMouseLeave={() => {
+          if (window.innerWidth < 840) {
+            setHeaderActive(false);
+          }
+        }}
+      >
+        {headerActive || window.innerWidth > 840 ? (
+          <div>
+            <NavLink
+              className="btn btn-primary header-btn first-btn"
+              style={headerButton}
+              activeStyle={activeStyle}
+              to="/"
+              exact
+              onMouseEnter={() => {
+                setActiveDropList(0);
+              }}
+            >
+              Home
+            </NavLink>
+            {'|'}
+            <NavLink
+              className="btn btn-primary header-btn"
+              style={headerButton}
+              activeStyle={activeStyle}
+              to="/covid-19"
+              onMouseEnter={() => {
+                setActiveDropList(1);
+              }}
+            >
+              {' '}
+              Covid-19 Pandemic Resources
+            </NavLink>
+            {'|'}
+            <NavLink
+              className="btn btn-primary header-btn"
+              style={headerButton}
+              activeStyle={activeStyle}
+              to="/maryland-911-alternatives"
+              onMouseEnter={() => {
+                setActiveDropList(0);
+              }}
+            >
+              {' '}
+              Maryland 911 Alternatives
+            </NavLink>
+            {'|'}
+            <NavLink
+              className="btn btn-primary header-btn"
+              style={headerButton}
+              activeStyle={activeStyle}
+              to="/help-us"
+              onMouseEnter={() => {
+                setActiveDropList(0);
+              }}
+            >
+              {' '}
+              Help us help you
+            </NavLink>
+            {'|'}
+            <NavLink
+              className="btn btn-primary header-btn"
+              style={headerButton}
+              activeStyle={activeStyle}
+              to="/data"
+              onMouseEnter={() => {
+                setActiveDropList(0);
+              }}
+            >
+              {' '}
+              Source Data and APIs
+            </NavLink>
+            {'|'}
+            <NavLink
+              className="btn btn-primary header-btn"
+              style={headerButton}
+              activeStyle={activeStyle}
+              to="/contact"
+              onMouseEnter={() => {
+                setActiveDropList(0);
+              }}
+            >
+              {' '}
+              Contact
+            </NavLink>
+          </div>
+        ) : null}
+
         {activeDropList === 1 || location.pathname.includes('/covid-19') ? (
           <div
             onMouseLeave={() => {
@@ -143,6 +158,17 @@ function Header() {
             }}
           >
             <DropList content={covidList} />
+          </div>
+        ) : null}
+        {window.innerWidth < 840 ? (
+          <div
+            className="headerBar"
+            style={{ textAlign: 'center', color: 'white' }}
+            onMouseEnter={() => {
+              setHeaderActive(true);
+            }}
+          >
+            ☰
           </div>
         ) : null}
       </nav>
