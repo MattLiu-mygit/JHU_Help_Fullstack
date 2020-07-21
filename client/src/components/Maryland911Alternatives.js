@@ -107,7 +107,6 @@ class Maryland911Alternatives extends React.Component {
         <div
           className="main-content covid-content"
           style={{
-            float: 'left',
             width: '61.5%',
             marginTop: '0.5rem',
             paddingTop: '0.25rem',
