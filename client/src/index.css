@@ -183,7 +183,6 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   border-radius: 0.5rem;
-  min-width: 75rem;
 }
 
 .table {
@@ -247,4 +246,20 @@ a:hover {
   color: white;
   background-color: rgba(7, 66, 122, 0.7);
   box-shadow: none;
+}
+
+.list-btn {
+  box-shadow: none;
+  width: 100%;
+  text-align: left;
+  border-radius: 0px;
+  background-color: rgba(7, 66, 122, 0.7);
+  border: none;
+}
+
+.covid-content {
+  float: right;
+  width: 70%;
+  margin-left: 0rem;
+  margin-top: 1%;
 }

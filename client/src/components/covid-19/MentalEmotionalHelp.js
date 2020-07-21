@@ -13,7 +13,7 @@ const MentalEmotionalHelp = () => {
   }, []);
 
   return (
-    <div className="main-content">
+    <div className="main-content covid-content">
       <h2>Mental and Emotional Resources</h2>
       <p>
         Some tips for self-care while socializing can be found{' '}

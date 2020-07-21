@@ -14,7 +14,7 @@ const ChildcarePage = () => {
     });
   }, []);
   return (
-    <div className="main-content">
+    <div className="main-content covid-content">
       <h2>Homeschooling and ChildCare</h2>
       {homeschoolingandchildcare.map((data) => (
         <Collapsible

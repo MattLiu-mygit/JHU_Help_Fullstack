@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const YouHelp = () => {
   return (
     <>
-      <div className="main-content">
+      <div className="main-content covid-content">
         <h2>How you can help in the pandemic!</h2>
         <h5 style={{ marginTop: '3rem' }}>Help our Healthcare Workers</h5>
         <Collapsible

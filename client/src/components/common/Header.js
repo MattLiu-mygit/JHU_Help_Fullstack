@@ -13,6 +13,7 @@ const headerButton = {
 function Header() {
   const [activeDropList, setActiveDropList] = useState(0);
   const [headerActive, setHeaderActive] = useState(false);
+
   useEffect(() => {
     if (window.innerWidth > 840) {
       setHeaderActive(true);
@@ -152,8 +153,7 @@ function Header() {
           </div>
         ) : null}
 
-        {headerActive &&
-        (activeDropList === 1 || location.pathname.includes('covid-19')) ? (
+        {headerActive && activeDropList === 1 ? (
           <div
             onMouseLeave={() => {
               setActiveDropList(0);

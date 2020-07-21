@@ -13,7 +13,7 @@ const DIYPage = () => {
   }, []);
 
   return (
-    <div className="main-content">
+    <div className="main-content covid-content">
       <h2>DIY Projects and Fun!</h2>
       {diy.map((data) => (
         <Collapsible

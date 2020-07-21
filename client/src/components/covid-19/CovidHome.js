@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
 import SurveyTable from './SurveyTable';
 import MentalEmotionalHelp from './MentalEmotionalHelp';
@@ -12,6 +12,11 @@ import DIYPage from './DIYPage';
 import ReportPage from './ReportPage';
 import YourHelp from './YourHelp';
 
+const activeStyle = {
+  color: '#89cff0',
+  backgroundColor: 'transparent',
+};
+
 const CovidHome = () => {
   return (
     <>
@@ -22,10 +27,75 @@ const CovidHome = () => {
           paddingBottom: '0.5rem',
           minHeight: '8rem',
           paddingTop: '2rem',
-          marginTop: '75px',
         }}
       >
         <h1>Covid-19 Pandemic Resources</h1>
+      </div>
+      <div
+        className="main-content"
+        style={{
+          width: '22.5%',
+          float: 'left',
+          marginRight: '0rem',
+          marginTop: '1%',
+        }}
+      >
+        <NavLink
+          activeStyle={activeStyle}
+          className="btn btn-primary list-btn"
+          to="/covid-19/mental-emotional"
+        >
+          Mental and Emotional Resources
+        </NavLink>
+        <NavLink
+          activeStyle={activeStyle}
+          className="btn btn-primary list-btn"
+          to="/covid-19/unstable-income"
+        >
+          Unstable Income
+        </NavLink>
+        <NavLink
+          activeStyle={activeStyle}
+          className="btn btn-primary list-btn"
+          to="/covid-19/resource-insecurity"
+        >
+          Resource Insecurity
+        </NavLink>
+        <NavLink
+          activeStyle={activeStyle}
+          className="btn btn-primary list-btn"
+          to="/covid-19/college-help"
+        >
+          College Help
+        </NavLink>
+        <NavLink
+          activeStyle={activeStyle}
+          className="btn btn-primary list-btn"
+          to="/covid-19/childcare"
+        >
+          Homeschooling and Children
+        </NavLink>
+        <NavLink
+          activeStyle={activeStyle}
+          className="btn btn-primary list-btn"
+          to="/covid-19/report"
+        >
+          Report Racism/Hate Crimes
+        </NavLink>
+        <NavLink
+          activeStyle={activeStyle}
+          className="btn btn-primary list-btn"
+          to="/covid-19/diy-fun"
+        >
+          DIY Projects and Fun
+        </NavLink>
+        <NavLink
+          activeStyle={activeStyle}
+          className="btn btn-primary list-btn"
+          to="/covid-19/your-help"
+        >
+          How <i>you</i> can help!
+        </NavLink>
       </div>
 
       {

@@ -12,7 +12,7 @@ const CollegeHelpPage = () => {
     });
   }, []);
   return (
-    <div className="main-content">
+    <div className="main-content covid-content">
       <h2>College Help/Academic Assistance</h2>
       {collegeHelp.map((data) => (
         <Collapsible

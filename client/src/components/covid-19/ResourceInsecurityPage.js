@@ -13,7 +13,7 @@ const ResourceInsecurityPage = () => {
   }, []);
 
   return (
-    <div className="main-content">
+    <div className="main-content covid-content">
       <h2>Resource Insecurity</h2>
       {resourceInsecurities.map((data) => (
         <Collapsible

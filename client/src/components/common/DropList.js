@@ -1,9 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 const activeStyle = {
   color: '#89cff0',
   backgroundColor: 'transparent',
 };
+
 const headerButton = {
   padding: '0.2rem',
   borderRadius: '0px',
@@ -12,6 +14,7 @@ const headerButton = {
   boxShadow: 'none',
   marginBottom: '0.1rem',
 };
+
 const DropList = (props) => {
   return (
     <div

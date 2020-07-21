@@ -13,7 +13,7 @@ const UnstableIncomePage = () => {
   }, []);
 
   return (
-    <div className="main-content">
+    <div className="main-content covid-content">
       <h2>Unstable Income</h2>
       {unstableIncome.map((data) => (
         <Collapsible

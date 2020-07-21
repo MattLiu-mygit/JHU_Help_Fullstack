@@ -13,7 +13,7 @@ const ReportPage = () => {
   }, []);
 
   return (
-    <div className="main-content">
+    <div className="main-content covid-content">
       <h2>Report Racism/Hate Crimes</h2>
       {racismHateCrimes.map((data) => (
         <Collapsible
