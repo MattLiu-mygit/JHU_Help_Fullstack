@@ -38,7 +38,7 @@ const CovidHome = () => {
           display: 'inline-block',
           width: '33.5%',
           fontSize: '1.25rem',
-          marginTop: '0.5rem',
+          marginTop: '1%',
           marginRight: '0rem',
           borderTopRightRadius: '0rem',
           borderBottomRightRadius: '5px',
