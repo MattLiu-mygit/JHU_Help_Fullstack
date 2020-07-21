@@ -12,6 +12,7 @@ class UsingMongoPage extends React.Component {
   render() {
     return (
       <>
+        <div className="placeholder"> |</div>
         <div className="main-content">
           <h2>Using Mongo Atlas to Add, Modify, and Delete Data</h2>
           <p>
