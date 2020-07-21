@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import HomePage from './HomePage';
 import ContactPage from './ContactPage';
 import Header from './common/Header';

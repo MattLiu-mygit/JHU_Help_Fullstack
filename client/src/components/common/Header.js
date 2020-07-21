@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 import DropList from './DropList';
+
 const headerButton = {
   padding: '0.2rem',
   borderRadius: '0px',
@@ -10,6 +10,7 @@ const headerButton = {
   boxShadow: 'none',
   marginBottom: '0.1rem',
 };
+
 function Header() {
   const [activeDropList, setActiveDropList] = useState(0);
   const [headerActive, setHeaderActive] = useState(false);
@@ -18,7 +19,7 @@ function Header() {
     if (window.innerWidth > 840) {
       setHeaderActive(true);
     }
-  }, window.innerWidth);
+  }, [window.innerWidth]);
 
   const covidList = [
     {
@@ -54,7 +55,6 @@ function Header() {
       path: '/covid-19/your-help',
     },
   ];
-  let location = useLocation();
   const activeStyle = {
     color: '#89cff0',
     backgroundColor: 'transparent',

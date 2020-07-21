@@ -36,13 +36,13 @@ const CovidHome = () => {
         className="main-content"
         style={{
           display: 'inline-block',
-          width: '33.5%',
+          width: '24.5%',
           fontSize: '1.25rem',
           marginTop: '1%',
           marginRight: '0rem',
           borderTopRightRadius: '0rem',
           borderBottomRightRadius: '5px',
-          minWidth: '13rem',
+          minWidth: '11.5rem',
         }}
       >
         <NavLink
