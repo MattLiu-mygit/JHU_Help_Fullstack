@@ -147,7 +147,8 @@ function Header() {
           </div>
         ) : null}
 
-        {activeDropList === 1 || location.pathname.includes('/covid-19') ? (
+        {(activeDropList === 1 || location.pathname.includes('/covid-19')) &&
+        headerActive ? (
           <div
             onMouseLeave={() => {
               setActiveDropList(0);
