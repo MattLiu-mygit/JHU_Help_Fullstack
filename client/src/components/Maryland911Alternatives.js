@@ -93,7 +93,7 @@ class Maryland911Alternatives extends React.Component {
             find what you need, use the search function below.
             <p>
               <input
-                style={{ marginTop: '1rem', marginLeft: '0rem' }}
+                style={{ marginTop: '1rem', marginLeft: '0rem', width: '100%' }}
                 placeholder="Search for a number here!"
                 value={this.state.searchterm}
                 className="form-control searchbar"
